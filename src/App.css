@@ -6,12 +6,19 @@
 /*STYLE*/
 body {
   padding: 0;
- /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);*/
-  background-color: #252525 !important;
+/*  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image: linear-gradient(to top, #7028e4 100%, #e5b2ca 0%);
+  background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+ background-blend-mode: screen;
+*/
+background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+
 }
 
 * {
-  font-family: "Montserrat";
+  font-family: 'Open Sans', "Montserrat";
+  line-height: 23px;
   color: #fff;
 }
 
@@ -20,23 +27,35 @@ body {
   min-height: 95vh;
   width: 85%;
   margin: auto;
-  margin-top: 2.5vh;
-  margin-bottom: 2vh;
-  background-color: #111111;
-  box-shadow: 2px 4px 4px #22222294;
-  padding: 15px 2px;
-
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+ /* background-image: url('./imagenes/body_bg.png');*/
+  
+  padding: 3px 0px;
+  border-radius: 4px;
+  
 }
 
 .App-header {
-  height: 15s0px;
+  background-image: url('./imagenes/body_bg.png');
+  height: auto;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  background-size: cover;
+  padding-top: 20px;
+  border-radius: 5px;
+  
+}
+
+.head {
+  display: flex;
+  margin: 0;
+}
+
+.sub-titulo {
+
 }
 
 .containerLogo {
@@ -48,7 +67,7 @@ body {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  background-color: #141414;
+  background-color: #1a5e58;
   border: 1px solid #308079;
 }
 
@@ -59,7 +78,7 @@ body {
 .header-titulo {
   margin-left: 20px;
   font-family: "Rubik Wet Paint" !important;
-  font-size: 45px;
+  font-size: 50px;
   color: rgb(255, 230, 5);
   text-shadow: 2px 2px 1px #111;
 }
@@ -105,17 +124,64 @@ main .art-1 {
 
 
 .servicios {
-  min-height: 200px;
-  border: 1px solid #2c2c2c;
-  border-radius: 2px;
-  margin-top: 50px;
+  text-align: left;
 }
 
 
+.tools {
+  min-height: 200px;
+  border-radius: 4px;
+  margin-top: 50px;
+  background-color: #111111ad;
+  box-shadow: 2px 5px 5px #3f3f3fee;
+  padding-top: 10px;
+}
 
+.tools .tools-titulo {
+  font-weight: 800;
+}
 
+.tools .container-articulos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
 
+.tools .container-articulos .tools-art {
+  margin: 15px 5px;
+  border-radius: 4px;
+  min-height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 18px;
+  padding-top: 10px;
+}
 
+.tools .container-articulos .tools-art:hover {
 
+}
 
+.tools-art .tools-art-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools-art .tools-art-header .tools-art-logo {
+  height: 60px;
+}
+.tools-art .tools-art-header .tools-art-titulo {
+  font-weight: 600;
+  margin: 3px 0px;
+}
+
+.tools-art .tools-art-desc {
+  border-top: 1px solid rgba(190, 190, 190, 0.425);
+  margin-top: 8px;
+  text-align: left;
+  font-size: 15px;
+}
 
